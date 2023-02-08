@@ -27,7 +27,7 @@ class ClipboardApp(tk.Tk):
                 self.copy_to_clipboard("ñ")
 
             if keyboard.is_pressed("ctrl+shift+4"):  # if key "name of your key" is pressed  
-                self.copy_to_clipboard("'")
+                self.copy_to_clipboard("`")
 
             if keyboard.is_pressed("ctrl+shift+5"):  # if key "name of your key" is pressed  
                 self.copy_to_clipboard(">")
@@ -48,7 +48,7 @@ class ClipboardApp(tk.Tk):
         button2 = tk.Button(self, text="ñ", command= lambda: self.copy_to_clipboard("ñ") ,width=16)
         button2.grid(row=1, column=0)
 
-        button = tk.Button(self, text="'", command= lambda: self.copy_to_clipboard("'") ,width=16)
+        button = tk.Button(self, text="`", command= lambda: self.copy_to_clipboard("`") ,width=16)
         button.grid(row=1, column=1)
 
         button3 = tk.Button(self, text=">", command= lambda: self.copy_to_clipboard(">") ,width=16)
